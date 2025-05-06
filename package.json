@@ -1,0 +1,28 @@
+{
+    "name": "jquery-todo-app",
+    "version": "4.1.0",
+    "displayName": "jQuery TODO App",
+    "engines": {
+        "node": ">=18.16"
+    },
+    "dependencies": {
+        "add": "^2.0.6",
+        "cordova-plugin-camera": "^7.0.0",
+        "monaca-plugin-monaca-core": "3.3.1",
+        "plugin": "^0.3.3"
+    },
+    "scripts": {
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "cordova": {
+        "plugins": {
+            "monaca-plugin-monaca-core": {},
+            "cordova-plugin-camera": {}
+        }
+    },
+    "devDependencies": {
+        "browser-sync": "~2.27.7",
+        "cordova": "^12.0.0"
+    }
+}
